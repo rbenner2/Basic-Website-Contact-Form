@@ -1,0 +1,166 @@
+<!--By Regan Benner | 8795051 | rbenner5051@conestogac.on.ca-->
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aesthetics Spa</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Aesthetics Spa</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="contact">
+       <h2>Contact Us</h2>
+       <p>Please feel free to fill out the form below to send us your service request.</p>
+       <form action="process-form" method="post">
+           <fieldset>
+               <legend>Contact Details</legend>
+               <div class="field">
+                   <label for="name">Name:</label>
+                   <input type="text" name="name" id="name" placeholder="First Last" required>
+               </div>
+               <div class="field">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="example@email.com" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="123-123-1234" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                <div class="field"> 
+                    <label for="address">Address: </label> 
+                    <input type="text" name="address" id="address" placeholder="123 Example Street"> 
+                    </div> 
+                    <div class="field"> 
+                        <label for="province">Province: </label> 
+                        <select name="province" id="province"> 
+                            <option value="">-- Select a Province --</option> 
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland & Labrador</option>
+                            <option value="NWT">Northwest Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PEI">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon</option>
+                        </select> 
+                    </div> 
+                </div>
+           </fieldset>
+
+           <fieldset> 
+                <legend>Services</legend> 
+                <div class="services">
+                    <label for="services">Select Services: </label><br> 
+                    <input type="checkbox" name="services" id="microblading" value="microblading" checked>Microblading<br>
+                    <input type="checkbox" name="services" id="lashes" value="lashes">Eyelash Extensions<br>
+                    <input type="checkbox" name="services" id="manicure" value="manicure">Manicure<br>
+                    <input type="checkbox" name="services" id="pedicure" value="pedicure">Pedicure<br>
+                </div> 
+                <div class="field"> 
+                    <label for="appointmentDate">Appointment Date: </label> 
+                    <input type="date" name="appointmentDate" id="appointmentDate"> 
+                </div> 
+                <div class="field"> 
+                    <label for="aesthetician">Preferred Aesthetician: </label> 
+                    <select name="aesthetician" id="aesthetician"> 
+                        <option value="">-- Select an Aesthetician --</option> 
+                        <option value="Ashley">Ashley</option> 
+                        <option value="Lindsay">Lindsay</option> 
+                        <option value="Ryan">Ryan</option> 
+                        <option value="Tori">Tori</option> 
+                    </select> 
+                </div> 
+           </fieldset>
+
+           <fieldset> 
+            <legend>Create Login Account</legend> 
+            <div class="account"> 
+                 <input type="radio" name="account" id="accountYes"> 
+                 <label for="accountYes">Yes</label> 
+            </div> 
+            <div class="account"> 
+                 <input type="radio" name="account" id="accountNo"> 
+                 <label for="accountNo">No</label>  
+             </div>
+             <div class="field">
+                <label for="accountEmail">Email:</label>
+                <input type="email" name="accountEmail" id="accountEmail" placeholder="example@email.com">
+                </div>
+             <div class="field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                </div>
+             </fieldset>
+
+             <fieldset>
+            <legend>Message</legend>
+             <div class="textarea">
+                <label for="message">Include a brief message to tell us more about the services you are interested in:</label>
+                <br>
+                <br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here"></textarea>
+             </div>
+            </fieldset>
+
+             <div class="submit"> 
+                <div> 
+                     <input type="checkbox" name="terms" id="terms" value="Yes" required checked> 
+                     <label for="terms">I Agree to the Terms and Conditions</label
+ > 
+                </div> 
+                <button type="submit">Submit</button> 
+            </div>
+
+       </form>
+    </main>
+    
+    <aside>
+        <img src="images/spafront.jpg" alt="Aesthetic Spa Front">
+        <h3>Our Address</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d11673.916657863238!2d-81.30723839999999!3d42.98924395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x882ef031cb16c479%3A0x5fbc4d707d08204c!2sWest%20London%2C%20London%2C%20ON!3m2!1d42.988266499999995!2d-81.3040765!5e0!3m2!1sen!2sca!4v1637815804477!5m2!1sen!2sca" width="300" style="border:0;" loading="lazy"></iframe>
+        <label>Address:</label>
+        <p>1180 Oakcrossing Road, London, ON</p>
+        <label>Phone:</label>
+        <p><a href="tel:555-666-7777">555-666-7777</a></p>
+        <label>Email:</label>
+        <p><a href="mailto:cosmetics@beauty.com">cosmetics@beauty.com</a></p>
+    </aside>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        &copy; Copyright Regan Benner, 2021  
+    </footer>
+
+</body>
+</html>
+
+
+
